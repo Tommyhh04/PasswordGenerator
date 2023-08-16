@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generate safe passwords</title>
+    <!--Links to google font Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!--Link to CSS and JavaScript-->
+    <link rel="stylesheet" href="passwordGen.css" />
+    <script src="passwordGen.js" defer></script>
+  </head>
+  <body>
+    <!--Places the whole project in the middle of the screen-->
+    <div class="place-Container">
+      <!--Container for the whole project-->
+      <div class="container">
+        <!--Contains text and explanation, and a button to generate the passwords-->
+        <div class="upperPart">
+          <h1 class="text-Title">Password generator</h1>
+          <h3 class="text-Paragraph">
+            Make secure passwords to use when creating accounts on the internet
+          </h3>
+          <button class="gen-Password" onclick="genPassButton()">
+            Generate passwords
+          </button>
+        </div>
+        <!--Displays the generated passwords-->
+        <div class="bottomPart">
+          <div class="password1"></div>
+          <div class="password2"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
